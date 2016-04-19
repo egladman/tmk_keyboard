@@ -63,7 +63,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP_ANSI(
         ESC, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, \
         TRNS,FN2, UP,  TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,TRNS,UP,TRNS, FN4,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,HOME,PGUP,LEFT, RIGHT,      TRNS, \
+        CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,HOME,PGUP,LEFT, RIGHT,      TRNS, \
         TRNS,TRNS, TRNS,WHOM,MUTE,VOLU,VOLD,TRNS,END,PGDN,DOWN,           TRNS, \
         TRNS,TRNS,TRNS,          FN1,                     TRNS,TRNS,TRNS,TRNS),
     /* 7: Layout selector
@@ -93,8 +93,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM fn_actions[] = {
     /* Poker Layout */
     [0] = ACTION_LAYER_MOMENTARY(6),  // to Fn overlay
-    [1] = ACTION_LAYER_TOGGLE(4),     // toggle arrow overlay
-    [2] = ACTION_LAYER_TOGGLE(5),     // toggle Esc overlay
+    // [1] = ACTION_LAYER_TOGGLE(4),     // toggle arrow overlay
+    // [2] = ACTION_LAYER_TOGGLE(5),     // toggle Esc overlay
     [3] = ACTION_MODS_KEY(MOD_RCTL|MOD_RSFT, KC_ESC), // Task(RControl,RShift+Esc)
     [4] = ACTION_LAYER_MOMENTARY(7),  // to Layout selector
     [5] = ACTION_DEFAULT_LAYER_SET(0),  // set qwerty layout
