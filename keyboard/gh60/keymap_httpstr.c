@@ -7,7 +7,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
         LGUI,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,  \
         LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,          FN0, \
-        LCTL,LGUI,LALT,          SPC,                     FN0, RGUI,APP, RCTL),
+        LCTL,LGUI,LALT,          SPC,                     FN0, RGUI,BTN1, BTN2),
     /* 1: colemak */
     KEYMAP_ANSI(
         GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
@@ -62,10 +62,10 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     KEYMAP_ANSI(
         ESC, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, \
-        TRNS,FN2, UP,  TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,TRNS,UP,TRNS, FN4,  \
-        CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,HOME,PGUP,LEFT, RIGHT,      TRNS, \
-        TRNS,TRNS, TRNS,WHOM,MUTE,VOLU,VOLD,TRNS,END,PGDN,DOWN,           TRNS, \
-        TRNS,TRNS,TRNS,          FN1,                     TRNS,TRNS,TRNS,TRNS),
+        TRNS, TRNS, TRNS,  TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,TRNS,UP,TRNS, INS, \
+        TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,HOME,PGUP,LEFT, RIGHT, TRNS, \
+        TRNS,TRNS, TRNS,WHOM,MUTE,VOLU,VOLD,TRNS,END,PGDN,DOWN,         TRNS, \
+        TRNS,TRNS,TRNS,          TRNS,                     TRNS,TRNS,TRNS,TRNS),
     /* 7: Layout selector
      * ,-----------------------------------------------------------.
      * | Lq| Lc| Ld| Lw|   |   |   |   |   |   |   |   |   |       |
@@ -84,9 +84,9 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * Lw: set Workman layout
      */
     KEYMAP_ANSI(
-        FN5, FN6, FN7, FN8, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
-        TRNS,FN5, FN8, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
-        TRNS,TRNS,TRNS,FN7, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS, \
+        TRNS, TRNS, TRNS, TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
+        TRNS,TRNS, TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
+        TRNS,TRNS,TRNS,TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS, \
         TRNS,TRNS,TRNS,FN6, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,          TRNS, \
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
 };
