@@ -34,7 +34,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       LSFT,Z,   X,   M,   C,   V,   K,   L,   COMM,DOT, SLSH,          FN9, \
       LCTL,FN0,LALT,          FN8,                     RALT, FN2, FN1, FN0),
 
-  /* 4: Function Layer */
+  /* 4: Primary Function Layer */
   KEYMAP_ANSI(
     GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, \
     TRNS, TRNS, TRNS,  TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,TRNS,UP,SYSREQ, INS, \
@@ -61,7 +61,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM fn_actions[] = {
-  [0] = ACTION_LAYER_MOMENTARY(4),  // to Fn overlay
+  [0] = ACTION_LAYER_MOMENTARY(4),  // to Primary Function overlay
   [1] = ACTION_LAYER_MOMENTARY(6),  // to Layout Selector overlay
   [2] = ACTION_LAYER_MOMENTARY(5),  // to Mouse Mode
 
