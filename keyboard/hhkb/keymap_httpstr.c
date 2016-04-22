@@ -16,31 +16,31 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
     TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSPC,       \
     LGUI,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,ENT,             \
     LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,FN0,             \
-         FN10,LATL,          FN8,                FN2, FN1),
+         FN10,LALT,          FN8,                FN2, FN1),
 
   /* 1: colemak */
   KEYMAP(
-    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,GRV,   \
-    TAB, Q,   W,   F,   P,   G,   J,   L,   U,   Y,   SCLN,   LBRC,RBRC,BSPC,       \
-    LGUI,A,   R,   S,   T,   D,   H,   N,   E,   I,   O,QUOT,ENT,             \
-    LSFT,Z,   X,   C,   V,   B,   K,   M,   COMM,DOT, SLSH,RSFT,FN0,             \
-         FN10,LATL,          FN8,                FN2, FN1),
+    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,GRV,  \
+    TAB, Q,   W,   F,   P,   G,   J,   L,   U,   Y,   SCLN,   LBRC,RBRC,BSPC,   \
+    LGUI,A,   R,   S,   T,   D,   H,   N,   E,   I,   O,QUOT,ENT,               \
+    LSFT,Z,   X,   C,   V,   B,   K,   M,   COMM,DOT, SLSH,FN9,FN0,            \
+         FN10,LALT,          FN8,                FN2, FN1),
 
   /* 2: dvorak */
   KEYMAP(
     ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   LBRC,RBRC,BSLS,GRV,  \
     TAB,QUOT, COMM,DOT, P,   Y,   F,   G,   C,   R,   L,   SLSH,EQL,BSPC,       \
     LGUI,A,   O,   E,   U,   I,   D,   H,   T,   N,   S,   MINS,ENT,            \
-    LSFT,SCLN Q,   J,   K,   X,   B,   M,   W,   V,   Z,   SLSH,RSFT,FN0,       \
-         FN10,LATL,          FN8,                FN2, FN1),
+    LSFT,SCLN, Q,   J,   K,   X,   B,   M,   W,   V,   Z,  FN9,FN0,            \
+         FN10,LALT,          FN8,                FN2, FN1),
 
   /* 3: workman */
   KEYMAP(
     ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,GRV,  \
     TAB, Q,   D,   R,   W,   B,   J,   F,   U,   P,   SCLN,LBRC,RBRC,BSPC,      \
     LGUI,A,   S,   H,   T,   G,   Y,   N,   E,   O,   I,   QUOT,ENT,            \
-    LSFT,Z,   X,   M,   C,   V,   K,   L,   COMM,DOT, SLSH,RSFT,FN0,            \
-         FN10,LATL,          FN8,                FN2, FN1),
+    LSFT,Z,   X,   M,   C,   V,   K,   L,   COMM,DOT, SLSH,FN9,FN0,            \
+         FN10,LALT,          FN8,                FN2, FN1),
 
   /* 4: Primary Function Layer */
   KEYMAP(
@@ -73,7 +73,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 /*
  * Fn action definition
  */
-#ifdef KEYMAP_SECTION_ENABLE
+
 const uint16_t fn_actions[] __attribute__ ((section (".keymap.fn_actions"))) = {
     [0]  = ACTION_LAYER_MOMENTARY(4), // to Primary Function overlay
     [1] = ACTION_LAYER_MOMENTARY(6),  // to Layout Selector overlay
@@ -88,8 +88,3 @@ const uint16_t fn_actions[] __attribute__ ((section (".keymap.fn_actions"))) = {
     [9] = ACTION_MODS_TAP_KEY(MOD_RSFT, KC_GRV),
     [10] = ACTION_MODS_ONESHOT(MOD_LCTL),
 };
-#else
-const uint16_t fn_actions[] PROGMEM = {
-    [0]  = ACTION_LAYER_MOMENTARY(4),
-};
-#endif
