@@ -28,26 +28,26 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 
   /* 2: dvorak */
   KEYMAP(
-    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   LBRC,RBRC,BSLS,GRV,   \
+    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   LBRC,RBRC,BSLS,GRV,  \
     TAB,QUOT, COMM,DOT, P,   Y,   F,   G,   C,   R,   L,   SLSH,EQL,BSPC,       \
-    LGUI,A,   O,   E,   U,   I,   D,   H,   T,   N,   S,   MINS,ENT,             \
-    LSFT,SCLN Q,   J,   K,   X,   B,   M,   W,   V,   Z,   SLSH,RSFT,FN0,             \
+    LGUI,A,   O,   E,   U,   I,   D,   H,   T,   N,   S,   MINS,ENT,            \
+    LSFT,SCLN Q,   J,   K,   X,   B,   M,   W,   V,   Z,   SLSH,RSFT,FN0,       \
          FN10,LATL,          FN8,                FN2, FN1),
 
   /* 3: workman */
   KEYMAP(
-    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,GRV,   \
-    TAB, Q,   D,   R,   W,   B,   J,   F,   U,   P,   SCLN,LBRC,RBRC,BSPC,       \
-    LGUI,A,   S,   H,   T,   G,   Y,   N,   E,   O,   I,   QUOT,ENT,             \
-    LSFT,Z,   X,   M,   C,   V,   K,   L,   COMM,DOT, SLSH,RSFT,FN0,             \
+    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS,GRV,  \
+    TAB, Q,   D,   R,   W,   B,   J,   F,   U,   P,   SCLN,LBRC,RBRC,BSPC,      \
+    LGUI,A,   S,   H,   T,   G,   Y,   N,   E,   O,   I,   QUOT,ENT,            \
+    LSFT,Z,   X,   M,   C,   V,   K,   L,   COMM,DOT, SLSH,RSFT,FN0,            \
          FN10,LATL,          FN8,                FN2, FN1),
 
   /* 4: Primary Function Layer */
   KEYMAP(
-    PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,   \
+    PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,  \
     CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,PAUS, UP, TRNS,BSPC,      \
-    TRNS,VOLD,VOLU,MUTE,TRNS,TRNS,PAST,PSLS,HOME,PGUP,LEFT,RGHT,PENT,            \
-    TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PPLS,PMNS,END, PGDN,DOWN,TRNS,TRNS,            \
+    TRNS,VOLD,VOLU,MUTE,TRNS,TRNS,PAST,PSLS,HOME,PGUP,LEFT,RGHT,PENT,           \
+    TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PPLS,PMNS,END, PGDN,DOWN,TRNS,TRNS,           \
          TRNS,TRNS,          TRNS,               TRNS,TRNS),
 
   /* 5: Mouse Mode */
